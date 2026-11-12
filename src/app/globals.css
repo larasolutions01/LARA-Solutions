@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════════════════════
+   LARA Solutions — design system
+   Brand palette + section themes (light · sky · dark · bright).
+   Components use semantic tokens (fg, body, muted, line, card,
+   accent, section) that re-resolve inside each themed section.
+   ══════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* Primary */
+  --color-ink: #081427; /* Midnight Navy */
+  --color-ink-2: #0c1d38;
+  --color-ink-3: #13294d;
+  --color-electric: #2864ff; /* Electric Blue */
+  --color-electric-deep: #1a4fe0;
+  --color-electric-soft: #7aa0ff;
+  --color-aqua: #00c9e8; /* Brilliant Cyan */
+  --color-fresh: #12d6b0; /* Fresh Teal */
+  /* Secondary */
+  --color-sunrise: #ffad55; /* Warm Sunrise Orange */
+  --color-lavender: #9674ff; /* Soft Lavender */
+  --color-skyline: #ebf6ff; /* Light Sky Blue */
+  --color-canvas: #fafbfc; /* Warm Off-White */
+  /* Status */
+  --color-success: #0f9f6e;
+  --color-danger: #e5484d;
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+  --animate-dash: dash 3s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  /* "backwards", not "both": holding the final keyframe leaves an identity
+     transform on the page wrapper, which breaks position:fixed for every
+     descendant — GSAP-pinned sections then scroll away and leave blank space. */
+  --animate-page-in: page-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  --animate-ken-burns: ken-burns 14s ease-out both;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-spin-slow: spin 40s linear infinite;
+
+  @keyframes page-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.08); }
+  }
+  @keyframes dash { to { stroke-dashoffset: -40; } }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes ken-burns {
+    from { transform: scale(1.12) translate3d(1.5%, 1%, 0); }
+    to { transform: scale(1) translate3d(0, 0, 0); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+/* Semantic, theme-aware colour tokens */
+@theme inline {
+  --color-section: var(--section);
+  --color-section-tint: var(--section-tint);
+  --color-fg: var(--fg);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-accent: var(--accent);
+}
+
+/* ── Section themes ─────────────────────────────────────────── */
+:root,
+.theme-light {
+  --section: #fafbfc;
+  --section-tint: #f1f5fb;
+  --fg: #081427;
+  --body: #3b4862;
+  --muted: #5b6983;
+  --line: rgb(8 20 39 / 0.09);
+  --line-strong: rgb(8 20 39 / 0.17);
+  --card: #ffffff;
+  --card-hover: #f6f9ff;
+  --accent: #2864ff;
+  --grad-text: linear-gradient(100deg, #2864ff 0%, #5a4dff 50%, #0aa3c2 100%);
+  --card-shadow: 0 1px 2px rgb(8 20 39 / 0.04), 0 18px 40px -18px rgb(8 20 39 / 0.18);
+  --grid-line: rgb(8 20 39 / 0.05);
+  color-scheme: light;
+}
+.theme-sky {
+  --section: #ebf6ff;
+  --section-tint: #ddefff;
+  --fg: #081427;
+  --body: #34445f;
+  --muted: #53627e;
+  --line: rgb(8 20 39 / 0.09);
+  --line-strong: rgb(8 20 39 / 0.17);
+  --card: #ffffff;
+  --card-hover: #fbfdff;
+  --accent: #1f57f0;
+  --grad-text: linear-gradient(100deg, #2864ff 0%, #5a4dff 50%, #0aa3c2 100%);
+  --card-shadow: 0 1px 2px rgb(8 20 39 / 0.05), 0 20px 44px -20px rgb(20 60 140 / 0.25);
+  --grid-line: rgb(40 100 255 / 0.07);
+  color-scheme: light;
+}
+.theme-dark {
+  --section: #081427;
+  --section-tint: #0c1d38;
+  --fg: #ffffff;
+  --body: #c5d1e6;
+  --muted: #93a4c2;
+  --line: rgb(255 255 255 / 0.1);
+  --line-strong: rgb(255 255 255 / 0.2);
+  --card: rgb(255 255 255 / 0.045);
+  --card-hover: rgb(255 255 255 / 0.08);
+  --accent: #5fdcf2;
+  --grad-text: linear-gradient(100deg, #7aa0ff 0%, #00c9e8 50%, #12d6b0 100%);
+  --card-shadow: 0 24px 60px -30px rgb(0 0 0 / 0.6);
+  --grid-line: rgb(255 255 255 / 0.05);
+  color-scheme: dark;
+}
+.theme-bright {
+  --section: #2864ff;
+  --section-tint: #1f57f0;
+  --fg: #ffffff;
+  --body: rgb(255 255 255 / 0.88);
+  --muted: rgb(255 255 255 / 0.74);
+  --line: rgb(255 255 255 / 0.2);
+  --line-strong: rgb(255 255 255 / 0.34);
+  --card: rgb(255 255 255 / 0.12);
+  --card-hover: rgb(255 255 255 / 0.18);
+  --accent: #ffd29e;
+  --grad-text: linear-gradient(100deg, #ffffff 0%, #d4f7ff 60%, #ffd29e 100%);
+  --card-shadow: 0 24px 60px -30px rgb(8 20 39 / 0.5);
+  --grid-line: rgb(255 255 255 / 0.08);
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+  html:not(.lenis) { scroll-behavior: smooth; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  ::selection { background: rgb(40 100 255 / 0.25); }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html:not(.lenis) { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ── Utilities ──────────────────────────────────────────────── */
+@utility section-theme {
+  background-color: var(--section);
+  color: var(--fg);
+}
+
+@utility text-gradient {
+  background-image: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-brand {
+  background-image: linear-gradient(115deg, #2864ff 0%, #1f8bff 55%, #00c9e8 100%);
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+@utility card-surface {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--card-shadow);
+}
+
+@utility glass {
+  background: rgb(255 255 255 / 0.08);
+  border: 1px solid rgb(255 255 255 / 0.16);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+}
+
+@utility glass-light {
+  background: rgb(255 255 255 / 0.72);
+  border: 1px solid rgb(255 255 255 / 0.8);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@utility container-x {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (min-width: 640px) { padding-inline: 2rem; }
+  @media (min-width: 1024px) { padding-inline: 3rem; }
+}
+
+/* Cursor-following spotlight for cards (vars set by Spotlight component) */
+.spotlight { position: relative; isolation: isolate; }
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, -20%), rgb(40 100 255 / 0.1), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+.spotlight:hover::before { opacity: 1; }
+
+/* Gradient hairline border. The default position sits in the components layer
+   so utilities such as `fixed` or `absolute` on the same element still win
+   (unlayered CSS would override every Tailwind utility). */
+@layer components {
+  .ring-gradient { position: relative; }
+}
+.ring-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgb(40 100 255 / 0.65), rgb(0 201 232 / 0.2) 45%, rgb(18 214 176 / 0.55));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Photo treatment: subtle brand-tinted overlay */
+.photo-tint::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(8 20 39 / 0) 40%, rgb(8 20 39 / 0.75) 100%);
+  pointer-events: none;
+}
+
+/* Long-form content (insights & case studies) */
+.prose-lara { color: var(--body); font-size: 1.0625rem; line-height: 1.8; }
+.prose-lara > * + * { margin-top: 1.25em; }
+.prose-lara h2 { color: var(--fg); font-size: 1.65rem; line-height: 1.25; margin-top: 2.2em; font-weight: 600; }
+.prose-lara h3 { color: var(--fg); font-size: 1.25rem; margin-top: 1.8em; font-weight: 600; }
+.prose-lara a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.prose-lara strong { color: var(--fg); font-weight: 600; }
+.prose-lara ul, .prose-lara ol { padding-left: 1.3em; }
+.prose-lara ul { list-style: disc; }
+.prose-lara ol { list-style: decimal; }
+.prose-lara li + li { margin-top: 0.45em; }
+.prose-lara li::marker { color: var(--accent); }
+.prose-lara blockquote { border-left: 3px solid var(--accent); padding-left: 1.2em; color: var(--fg); font-style: italic; }
+.prose-lara code { background: var(--section-tint); padding: 0.15em 0.4em; border-radius: 6px; font-size: 0.9em; }
+.prose-lara hr { border-color: var(--line); margin: 2.5em 0; }
+/* Tables scroll inside themselves on narrow screens instead of widening the page. */
+.prose-lara table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 0.95rem; line-height: 1.5; -webkit-overflow-scrolling: touch; }
+.prose-lara thead th { color: var(--fg); font-weight: 600; background: var(--section-tint); }
+.prose-lara th, .prose-lara td { border: 1px solid var(--line); padding: 0.6em 0.85em; text-align: left; vertical-align: top; min-width: 7.5rem; }
+.prose-lara tbody th, .prose-lara td:first-child { color: var(--fg); font-weight: 500; }
+
+/* Custom cursor label (desktop, fine pointer only) */
+@media (pointer: coarse) {
+  .cursor-follower { display: none !important; }
+}

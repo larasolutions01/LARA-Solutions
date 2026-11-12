@@ -1,0 +1,242 @@
+{
+"case-forecasting": {
+"w": 1920,
+"h": 1277,
+"blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAA4BaJZQCdAEUTtsQJMSAAP7s6QcrpzK6jlYppbLZNmfrwvqfpM+pg62qdIwr89VN39EbhvJcx6kILA46ZOi2ON/IX7uu1joIDRuDgf7y/AAAAA=="
+},
+"case-leads": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkAA4BaJQBOgBVUdW+AAP5hT/sXndPNSm+Equ3G+XM+aSIsiPQH3KzAuQ3F78KBNShN2dcnXp3UMLjdioIshrZqeLme15AAAA=="
+},
+"case-marketing": {
+"w": 1920,
+"h": 1368,
+"blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAA4BaJZwCdAEK0N7Zxz2AAM4kFlWcGCS5rNabgXtUY5RdFWmsucdQ8VNy1C0QVNmhRbyjQCtveu949YYtH5s44I/LBCOwTJboAAA="
+},
+"case-reporting": {
+"w": 1920,
+"h": 1382,
+"blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJZQC7AEPc1kvWiAA/k8OuHwwTFOQ1AV9vixd8fUrun4TUheOS/9Tfay6NH4tz9XT6Gakd2OljT0SArm4vn4BRUxnH8TJgTyQAA=="
+},
+"case-support": {
+"w": 1920,
+"h": 1281,
+"blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJQBOgCPN2T9Ix4oAAP7sV89AEB/ZON2LN6FdUL8ULyHzProAT2gxBP88YMNo4S77tGWv2tssfHa9bjznStL3H+qcfqSfkhTcX2GZNpKPbyJ4AAA="
+},
+"city-dusk": {
+"w": 1920,
+"h": 1440,
+"blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwAA4BaJZQCdH8ADxaHJngAAPnDGb6i+p9Uvhubom3BrSmDTko03tMQ/2N/BRlnrcQj8qZR84w/1E+BkAAA"
+},
+"city-towers": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsAA4BaJYwCdAEVx8h12ZMlAAD+thAcdB/HS6Cwy1Uu9TOMZdTvhwWPC3iXQsTA4NHWZxpf596l/3VJ05eWovA6EVLOyOcfRjLTVBv2BMAA"
+},
+"code-neon": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkAA4BaJZACdAD7Ay8JJGbAAP74VbS9RLanbQqlunJqlk4jVvUDjuu9Y/5J0d+GRyPezJ8AsU12FWRal397sIRipYT6mufTYMZ3aNwAAA=="
+},
+"ind-finance": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJZwAAgPqKEFkAAD+9A6qGo3AK8awMBhCF27e/H+CCKP4WllJXXdbaGpuvuhgSAswm65AamscG5IdpQcWqG1YAAA="
+},
+"ind-healthcare": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJQBdgCPyp9tOfgAA/tD973sJ6ShWfKtXuxeVC/TYQr2mEkVqyJNaxqmbUfitulqi6Q9kUXL2NQEFK6J4/Die1ROTEAAA"
+},
+"ind-logistics": {
+"w": 1920,
+"h": 1200,
+"blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAoAA4BaJYwCdAEPAczjNAAA/vSMBCrCEM8rqV5xBCLhuDbHPRhARh1tBDGCiaMLwAAA"
+},
+"ind-manufacturing": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAA4BaJZQAAsV3/TdsBIUAAP339GItX7rn6dPX/pdl1YjXxSUYlj7NFCHeuuffNbE2KfSVTYS397XgiY0s2tnnIS+PuDN5CzcpAAA="
+},
+"ind-realestate": {
+"w": 1920,
+"h": 1281,
+"blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsAA4BaJQBOgMW+5a5kG7QwAP7hi8UHTvYWgb7NGMnixev7/JaE6oGuacRRWeYp7iZyegBGmA9U1QR8P+iN2AA="
+},
+"ind-retail": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAsAA4BaJbACdAEWzn5okSuwAAD+62CY+Gl3uvJZL4ngiZGNc9HChsBcksYK762EPrhpqcMTAzSjmk1bnKbTpWEDcPbUvOAAAA=="
+},
+"ind-saas": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAA4BaJQBOgCFy7tXcQ4egAP6bapc6/su+kODl2bb5RR/CCkdQVr2FqpnAHN8MkMfwfRbylcTo1T2UNT7uCo8T5/cJI3xVKbMmawOoK4An6LvAAA=="
+},
+"ind-smb": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkAA4BaJYwC7AEU+PNJoNAA/ufaYjyF4/HrSRbQL16gmJrdYxZtKu5UdAZYXLHf6z05ipAN0W0W2GlFIOlJ9QAAAA=="
+},
+"ins-ai-start": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJZACdADGkW0s6EAA/vZBFm86tcoU7C1FugZr2H1yGC21HClMNotTZ4lCH5x/Uge7nonex9kuE5GM65s3New55z1et7ReTidVE3FEtAAAAA=="
+},
+"ins-foundation": {
+"w": 1920,
+"h": 1278,
+"blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsAA4BaJZQCdADdc+dA4LQYAAD+2HfToyN7TxJN1XpprL7hV73Y9mYVOtkSZpAP9LSQtxJQilNPfVKmj0ID3hvdSQgwYsmynigODsn2DrK2ywQsawAA"
+},
+"ins-kpi": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAkAA4BaJZwAAn2nPobVLwAA/so9CNjcZEgXv6iOoV/cY8Fm/yYIkCVDmzvrSRVM4SXG7xedI9+dM4LWPH5VKWDO3wowIh+KtuA2DjESDoAA"
+},
+"ins-marketing": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAA4BaJYwCdADxIe0UXqAA/u0XQ9eUqL3f6jifWPkVBZoVeNCwQxLO4caqBD7TRfnLN4eA3mkphbnM6snGv3VMAAAA"
+},
+"ins-process": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAsAA4BaJYgAAxbHc5hQAP6IoUBd1EdcQiu0gvnw5a5PxM0vkO1Z5yw4Btg5Ewu/efn83GqYQ5JZVv78MeqyDPBp4gAA"
+},
+"ins-supply": {
+"w": 1920,
+"h": 1272,
+"blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJbACdH8AFX3bmtoAAM3xLewEBKZutWNnr14NzjMiMjIL83EWWAt4ui6AUtyiVDagoMJR4xp4JfptwY+wUk5AVwCEWpSlgbqh13ACsplyKwiHgAA="
+},
+"people-celebrate": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkAA4BaJQBdgCP3403WhCQAAM4Yc97vuN9TVRggY/rrSMvi97whABjLhO8ovVep8qzT9IV2focQpfcFzkK2ksOPo0aiPA/kikEAAAA="
+},
+"people-creative": {
+"w": 1920,
+"h": 1440,
+"blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAwAA4BaJbACdH8AFBCSh9J4AAD+xeKWo3ykVZZHVFci7Y2VvVI4QUZQlSoa+dwzJPvmkUtFULTXSAK3ycwSfA0BZ8x5qL3c1DbIHUQCVjpkhi7rDgExAf2gvGU6QAA="
+},
+"people-entrepreneur": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAkAA4BaJQBOj+ACN2cLA0nwAP7pTCp72g/xDOFBljrDAVW1X3GwDqqnlOxeoMbbPy7My7zPjTaUslObZ7wfOWB/ZoAA"
+},
+"people-planning": {
+"w": 1920,
+"h": 1281,
+"blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAsAA4BaJQBdgCHf39XOwAD+8AWF+98Ja6dC9csl2UVwq1XWAvo3sKApy7INhHzj9Q04qZ0AnQgm68gAAA=="
+},
+"people-team": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkAA4BaJYwCdAEfP0lgnaUgAP7eHSP/QdG6Pi0j7uUMNnzZCbFG5oC7Ev8HRFhlvWpabgF7xwsIWRfysHuHoAA="
+},
+"people-tech": {
+"w": 1920,
+"h": 1221,
+"blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQAAoAA4BaJaACdH8AEjkqx6nmTQAA/uiqjkB3vILb2aORrU0yRLcxCkxrAWJFxqO2CepYS3Gt8nQzk/hCINhu/+Nftkwubu5QmZr4LWpJiI+WqhtPjeW/gXq0mniA5yt4AAAA"
+},
+"people-warehouse": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsAA4BaJQBOgBkpCNEREAD94byO3JyQxd9q8nWSPpduC+/bkewBz7KWs0QEg48qIZwiN+CCQe8+NW29HcmYoAA="
+},
+"port-night": {
+"w": 1920,
+"h": 1021,
+"blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkAA4BaJQBOgCPwG6LtGuAA/vGEFFBMaDXXzjpYTsB4CinXDBgisBER0n9r1EUOQAA+A1LE6QRAAAA="
+},
+"process-chalkboard": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAA4BaJYwCsAEIjmCKQAD+7MUI/8nhGugx8FRwLE+11pGkoHdXwSOW66vdr+WheHUFqPY6rUjVUgQCYHooAAA="
+},
+"svc-ai": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsAA4BaJZQCdAD7jaojtyQFAAD+8boleLr7GwCijKjvL40jX6DVyyh7NcRIoVeQ9/rYFBcE/8CFTCJGrwGhkzmuzOemL/nGyEt66PYZs+wkrp/PgAAA"
+},
+"svc-analytics": {
+"w": 1920,
+"h": 1075,
+"blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAkAA4BaJZQAAn27lKN2rTwA/vNTz0mvg36nODfpd4mUETYSNMbGapts0pJJlz4bHqgwzUEzmhqoCL5fA/DHkz1zP/AeCBwQwU2zGT4HC0AA"
+},
+"svc-marketing": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAQCdASoQAAkAA4BaJYgCdABV/+AA9r67IsrsvGiquuwjGLxa0pqvdiAZXKhkjNBo1i3P0yqwsafZB1e0ebRgPgDwKvDYegBYOG5luoFuJqecgAA="
+},
+"svc-process": {
+"w": 1920,
+"h": 1280,
+"blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsAA4BaJaACdADG8GJWjj0AAP7zi2Qzv94uptSD9VcEzHts1WU4iUQw18dTM35KOx8ZgpUhESC3bf/p52liUt6rRzRbmUAHcusbcBbzWN2lgAA="
+},
+"svc-supply": {
+"w": 1920,
+"h": 1278,
+"blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsAA4BaJZAC7AEfLjTqJc4AAP7Nrexxd95DMTQiyBe2blyB1Vf5y8S6M+79KV6OtNy4xet3xneiwNoaCZ89TyzdE1yV+fhEQHeyT4AAAA=="
+},
+"svc-transformation": {
+"w": 1920,
+"h": 1401,
+"blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAwAA4BaJZgCdADwoLMzSMAA/vFI53Nuicz4VqsCjblNL6FNWF7kwUxD5YMbgIfobG59E/RvU4f4bGa8xVTt3PUdOfg+jTmTVX8GjcJH/chqVfyRLI4IOUW2hFySPFmfd14cxgAAAA=="
+},
+"team-laptop": {
+"w": 1920,
+"h": 1281,
+"blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAsAA4BaJZwCsAYv1nZDCT45hAAA/oQakfrxK6UqQAQ1HxEqLYGBa7ihGBTbyhWPu6kfUOfi3xTdKXDeqrOx4aKXK91GJ63Ihg1Fo9Zm9dgAAAA="
+},
+"team-present": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAkAA4BaJZQCw7C5G+wgAP7vZHpw5XeOZMVQ/ZHMsaCjKz71WTMzpHJFPuLeoMsDYbn38CI7vRL7hfyFsQgUM3Hos7AA"
+},
+"team-review": {
+"w": 1920,
+"h": 1080,
+"blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAkAA4BaJbACdAEKzqciUIb0AAD+raolocl+ZhwbwG4qF/qPWeX9p3CakeOFvKJFP92NYMaqBsmZptaNbNJrOv7VJu/jhZrb7qHWMIAAAA=="
+},
+"poster-hero-analytics": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkAA4BaJYgCdAEDkqVcAADLTac4nsd4mXjINED8V08u3XLJcxftIa2yOG4hIyrzzzR6bTNz/f9VPwxeN0dB22IbgAAA"
+},
+"poster-hero-celebrate": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAkAA4BaJZQCdADp2dVOMgwAAP7X3/9uhQ1GTvOViu0NcItaAfV8DucaSW0omzXVbudSm07VQxodFT0jdFrGepiQFpAA"
+},
+"poster-hero-city": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAkAA4BaJYwCdH8AEW4OFxAA/rdwPJjxlLuojMhColv7gt9FCuRQz5CG1DVQcJTxPkQIza257NVhXlRWdb9cqSBkK+QUCsgoT+DAAAA="
+},
+"poster-hero-code": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAkAA4BaJQBdgMXX1flBUhSgAOJ/k471I19tjoP/HYKUPfj+HARwBeDlkYEnYvDU7Hx/OpFWqsij0P8UQ16O/1hakxRlaZOYDFj8gQCEYgJkZGklnGeAAAA="
+},
+"poster-hero-marketing": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAkAA4BaJYgCdADRaFx3YLEAAOATv4Bs2saND+1HGPOyPEJEYI0bv1Uv2GDZ4wgErUuWHeQ2b9Im8Wf3Jwk8260QcAAA"
+},
+"poster-hero-port": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABwAQCdASoQAAkAA4BaJQBWAAq+QADLPrW3xmtEbzwyqTMaQ0kuOOJY5E4qzGvr4+ETmcYuy8zhVQ88QAA="
+},
+"poster-hero-team": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkAA4BaJQBOgCC04SAA/peHf1ZBvRXLAjj8At88M4eT4DBhovDWU1VzTRv7DFxfZAB5MO31HvpMHqT1/oCxusSKaejR3k/ZrFLtlPCIPAAA"
+},
+"poster-hero-warehouse": {
+"w": 1280,
+"h": 720,
+"blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkAA4BaJQBOgA7t7EgAAP11+yk8lT2WH6PAG3IqP0KO9kdBBcW5zVKtnt6eSoDVzRIw4dgoy9tK+0gAAA=="
+}
+}

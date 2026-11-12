@@ -1,0 +1,94 @@
+# Decap CMS configuration — https://decapcms.org/docs/configuration-options/
+# Replace OWNER/REPO with your GitHub repository. For local editing run
+# `npx decap-server` alongside `npm run dev` and open http://localhost:3000/cms
+backend:
+  name: github
+  repo: OWNER/REPO
+  branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: insights
+    label: Insights
+    label_singular: Article
+    folder: content/insights
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "SEO title (optional, ≤ 60 chars)", name: seoTitle, widget: string, required: false }
+      - { label: Description (SEO, 20–320 chars), name: description, widget: text }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - AI & Automation
+          - Business Growth
+          - Marketing Intelligence
+          - Supply Chain Innovation
+          - Digital Transformation
+          - Data & Analytics
+          - AI for SMEs
+      - { label: "Featured image (media key, e.g. ins-kpi, or /uploads/file.jpg)", name: image, widget: string, required: false }
+      - { label: Author, name: author, widget: string, default: LARA Solutions Editorial Team }
+      - { label: Author role, name: authorRole, widget: string, required: false }
+      - { label: Publish date, name: date, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Updated date, name: updated, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Draft (hidden), name: draft, widget: boolean, default: false }
+      - { label: Tags, name: tags, widget: list, default: [] }
+      - label: Related services
+        name: services
+        widget: select
+        multiple: true
+        required: false
+        options: [ai-automation, digital-marketing, supply-chain-intelligence, data-analytics, process-optimization, digital-transformation, web-app-development, technology-integration, strategy-consulting]
+      - { label: Key takeaways (shown at the top), name: keyTakeaways, widget: list, required: false, default: [] }
+      - label: Sources (only sources you actually used)
+        name: sources
+        widget: list
+        required: false
+        default: []
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Publisher, name: publisher, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: case-studies
+    label: Case Studies
+    label_singular: Case study
+    folder: content/case-studies
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - label: Type
+        name: type
+        widget: select
+        options:
+          - { label: "Illustrative scenario (clearly labelled example)", value: illustrative }
+          - { label: "Client project (requires approval)", value: client }
+      - { label: "Client has approved publication", name: approved, widget: boolean, default: false, hint: "Client projects are hidden until this is ticked." }
+      - { label: Client name (only with permission), name: client, widget: string, required: false }
+      - { label: Industry, name: industry, widget: string }
+      - { label: Category, name: category, widget: string }
+      - { label: Business challenge, name: challenge, widget: text }
+      - { label: Solution, name: solution, widget: text }
+      - { label: Technology used, name: technology, widget: list }
+      - { label: Implementation approach, name: approach, widget: list }
+      - { label: "Results (verified only — or explain why not applicable)", name: results, widget: text }
+      - { label: Lessons & insights, name: insights, widget: list }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Sort order, name: order, widget: number, default: 100 }
+      - { label: "Cover image (media key or /uploads/file.jpg)", name: cover, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }

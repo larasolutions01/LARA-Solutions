@@ -1,0 +1,26 @@
+# Netlify build settings for the LARA Solutions website (Next.js App Router).
+#
+# This site is server-rendered, so Netlify must BUILD it. All of these work:
+#   - drag-and-drop: run `npm run netlify:upload`, then drag the generated
+#     `netlify-upload` folder onto the site's Deploys page (Netlify builds it)
+#   - a Git-connected site (builds on every push)
+#   - the CLI: `npx netlify-cli deploy --build --prod`
+#
+# The Next.js adapter (@netlify/plugin-nextjs) turns the build into server
+# functions + static assets (server rendering, API routes, image optimisation).
+# It is declared explicitly below: on some site setups Netlify does not add it
+# automatically, and then it publishes the raw .next folder as static files —
+# the deploy "succeeds" with "0 new function(s)" but every page is a 404.
+# Not listed in package.json on purpose, so Netlify installs its current
+# version (Netlify recommends not pinning it).
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
